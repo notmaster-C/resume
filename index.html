@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>[简历]蔡盛林-后端开发工程师</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/typo.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script>console.log("感谢您的浏览，期待能够加入贵公司！");</script>
+</head>
+
+<body>
+    <header class="header"></header>
+
+    <article class="container">
+        <section class="side" id="side">
+
+            <!-- 左栏固定开关，记得及时删除这段代码 Start-->
+            <label class="switch" style="display: none;" onchange="switchFixed()">
+                <script type="text/javaScript">
+                    function switchFixed(){
+                        var value = document.getElementById('side').style.position === 'fixed' ? 'absolute' : 'fixed';
+                        document.getElementById('side').style.position = value;
+                    }
+                </script>
+                <input id="cb" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <style>
+                @media (min-width: 	750px){
+                    .switch{position:relative;display:inline-block!important;width:60px;height:34px;}
+                    .switch input{display:none;}
+                    .slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#ccc;-webkit-transition:.4s;transition:.4s;}
+                    .slider:before{position:absolute;content:"";height:26px;width:26px;left:4px;bottom:4px;background-color:white;-webkit-transition:.4s;transition:.4s;}
+                    input:checked + .slider{background-color:#1abc9c;}
+                    input:focus + .slider{box-shadow:0 0 1px #1abc9c;}
+                    input:checked + .slider:before{-webkit-transform:translateX(26px);-ms-transform:translateX(26px);transform:translateX(26px);}.slider.round{border-radius:34px;}
+                    .slider.round:before{border-radius:50%;}
+                }
+            </style>
+            <!-- 左侧固定开关，记得及时删除这段代码 End-->
+
+            <!-- 个人肖像 -->
+            <section class="me">
+                <section class="portrait">
+                    <div class="loading">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <!-- 头像照片 -->
+                    <img class="avatar" src="https://foruda.gitee.com/avatar/1698504947249402753/11239959_n-mster_1698504947.png!avatar200" onload="document.getElementsByClassName('avatar')[0].style.display = 'block';document.getElementsByClassName('loading')[0].style.display = 'none';">
+                </section>
+
+                <h1 class="name">蔡盛林</h1>
+                <h4 class="info-job">后端开发工程师 / 成都</h4>
+
+            </section>
+
+            <!-- 基本信息 -->
+            <section class="profile info-unit">
+                <h2>
+                    <i class="fa fa-user" aria-hidden="true"></i>基本信息</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>个人信息</label>
+                        <span>蔡盛林 / 男 / 23岁</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 联系方式 -->
+            <section class="contact info-unit">
+                <h2>
+                    <i class="fa fa-phone" aria-hidden="true"></i>联系方式</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>手机</label>
+                        <a href="tel:15168285219" target="_blank">159-8442-6676</a>
+                    </li>
+                    <li>
+                        <label>邮箱</label>
+                        <a href="#" target="_blank">1700138161@qq.com</a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 技能点 -->
+            <section class="skill info-unit">
+                <h2>
+                    <i class="fa fa-code" aria-hidden="true"></i>技能点</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>JAVA</label>
+                        <progress value="80" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>数据库</label>
+                        <progress value="80" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>Golang</label>
+                        <progress value="75" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>Linux</label>
+                        <progress value="75" max="100"></progress>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- <section class="qrcode info-unit">
+                <h2><i class="fa fa-qrcode" aria-hidden="true"></i>二维码</h2>
+                <hr/>
+                <img src="https://github.com/if2er/FeZaoDuKe-Collection/blob/master/ifeees.jpg?raw=true" style="width: 100%;" alt="">
+            </section> -->
+
+            <!-- 技术栈 -->
+            <div class="stack info-unit">
+                    <h2><i class="fa fa-code" aria-hidden="true"></i>其他</h2>
+                    <hr/>
+                    <ul>
+                        <li>
+                            <label>前端</label>
+                            <span>小程序、Layui、Thymeleaf、Vue、HTMLJSCSS三大件</span>
+                        </li>
+                        <li>
+                            <label>后端</label>
+                            <span>SpringMVC、JPA、SpringCloud、Mybatis、MySQL、Oracle、Redis</span>
+                        </li>
+                        <li>
+                            <label>其他</label>
+                            <span>Git、Markdown</span>
+                        </li>
+                    </ul>
+                </div>
+        </section>
+
+        <section class="main">
+
+            <!-- 教育经历 -->
+            <section class="edu info-unit">
+                <h2>
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>教育经历</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>西华大学 - 软件工程专业（本科）</span>
+                            <time>2019.9-2023.7</time>
+                        </h3>
+                        <p><a href="https://nmc.xhu.edu.cn/2964/list.htm" target="_blank" >点击网络</a>
+                            <mark>负责人</mark>，期间带领团队参与蓝桥杯、创想杯、创新创业大赛、软件测试大赛、ACM算法、CTF杂项比赛等。</p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 工作经历 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>工作经历</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>四川乐为科技有限公司－后端开发工程师</span>
+                            <time>2023.4 至今</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>深度参与西华大学数据中台项目，项目包含以下子产品：填报平台、督导系统、可视化平台、数据提取推送一体化平台，以及单独为开发的图书馆年度报告。子产品项目采用技术栈
+                                <mark>Golang+Gorm+Gin+Casbin</mark>，我负责的是
+                                <mark>数据接入、清洗、建模、提供</mark>，<mark>数据计算和子产品开发的后端接口提供</mark>。</li>
+                            <li>数据中台项目主要业务是获取学校各业务系统<mark>结构化或非结构化数据</mark>到<mark>数据湖ODS</mark>中，进行<mark>数据清洗、建模</mark>后存放在<mark>数据仓库UDW</mark>
+                                中，通过<mark>ETL推送、数据API清单</mark>提供给第三方开发系统。
+                                </li>
+                            <li>填报平台业务是为了给学校教师以及用户等提供线上表单填报服务，包含流程引擎、低代码表单构建、填报数据分析等
+                                <mark>数据中台数据的提取、清洗、建模、ETL推送、第三方接口提供给其他业务系统</mark>，
+                                <mark>可视化平台接口</mark>，<mark>填报平台表单接口、数据分析接口，以及新增身份新需求等接口提供</mark>，<mark>督导系统后端接口</mark>。
+                            </li>
+                            <li>
+                                督导系统业务是为了给退休教师提供<mark>考场巡查、教育教学督查、教研活动提交、课堂巡查、听课记录</mark>等功能。
+                            </li>
+                            <li>
+                                可视化平台业务是为了给学校领导、师生提供<mark>可视化数据展示</mark>。
+                                包括<mark>校园卡消费数据分析(上亿数据量，日均十万+数据量)</mark>、<mark>智慧教务(成绩分析百万数据量)</mark>、<mark>智慧校园(海康门禁数据千万数据量)</mark>、
+                                <mark>网络安全(umc)</mark>、<mark>上网日志(日志和实时数据)</mark>、 <mark>数字人事(新旧数据更迭)</mark>、
+                                <mark>科研数据(5.0低版本MySQL数据对接)</mark>、<mark>招就数据(层级下钻指标多)</mark>、
+                                <mark>图书馆数据(百万册图书、百万级图书馆门禁数据)</mark>、
+                                <mark>智能助手(基于千帆大模型进行问答)</mark>
+                                等模块。
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 项目经验 -->
+            <section class="project info-unit">
+                <h2>
+                    <i class="fa fa-terminal" aria-hidden="true"></i>个人项目</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>[项目1]贵州铜仁学院陆艳工作室</span>
+                            <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>
+                            <time>2021.12-2022.1</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：SpringMVC+Thymeleaf+Layui+JWT</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]为陆艳老师开发的名师工作室网站，类似于博客网站，用于在校园内网交流
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]同 2 位同专业同学一起
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [贡献]参与
+                                <mark>“需求沟通-设计-实现”</mark>全流程，主要负责后端开发(框架搭建、断点续传和大文件秒传等)、及后台管理系统开发，最后项目部署工作
+                                <br/>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [效果]达到甲方要求，收入（2000/5000）</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目2]小柚子车业汽车服务平台</span>
+                            <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>
+                            <time>2022.7-2023.3</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：SpringBoot+Vue+SaToken+微信小程序</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]提供商家入驻服务，用户可购买洗车修车等服务，线下扫码核销，高价值服务需要拍照上传
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]后端3个(大二学弟以及一个学长-出差)前端5个(不太熟悉，似乎有几个新人)，产品1个(后来实习出差了)，PM一个
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [贡献]
+                                自定义切面检测自定义注解，记录请求IP，使用ip2region解析归属地， <br>
+                                检测上传注解使用百度内容审核API对用户上传内容进行非法审核，检测注解DistributedLock实现分布式锁<br>
+                                使用mybatis-plus插件实现乐观锁并发控制，防止数据不一致<br>
+                                基于 Redis 实现消息队列注解MessageListener，Stream 提供集群消费，Pub/Sub 提供广播消费，基于 Redis RRateLimiter 实现接口限流，<br>
+                                基于 smart-doc生成 API 接口文档 （基于注释生成文档）
+                                <br/>
+                                <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
+                                [效果]由于前端效果甲方不满意并且前端几个同学忙去找工作没时间修改，该项目未能成功上线(ㄒoㄒ)
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目3]智慧旅游平台</span>
+                            <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>
+                            <time>2022.10-2023.1</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：SpringMVC+Thymeleaf+Layui+SpringSecurity+JPA</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]毕设项目，为用户提供旅游路线、景点门票预约、酒店预订、车票预约、旅游攻略功能，后台实现cms系统
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]单人项目
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [贡献]使用 <mark>自定义AOP切面检测注解</mark>记录请求IP、归属地、URI、用户信息。<br>
+                                使用 <mark>elasticSearch</mark>实现全文搜索，使用 <mark>Redis</mark>缓存热点数据<br>
+                                通过 <mark>协同过滤推荐算法</mark>itemCF根据景点或酒店推荐酒店、车票或景点，UserCF根据同样地区(ip)的userid set(不重复)计算皮尔森系数推荐景点。
+                                <br/>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [效果]达到毕业要求，收入（学士学位证）</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 自我评价 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-pencil" aria-hidden="true"></i>自我评价</h2>
+                <hr/>
+                <p>善于倾听和交流，具有团队精神，能够有效解决问题；</p>
+            </section>
+        </section>
+    </article>
+
+
+
+    <footer class="footer">
+        <p>© 2024 蔡盛林.文档最后更新时间为
+            <time>2024年04月10日</time>.</p>
+    </footer>
+
+    <!-- 侧栏 -->
+    <aside>
+        <ul>
+            <li>
+                <a href="https://gitee.com/itsay/resume" target="_blank">Gitee</a>
+            </li>
+            
+            <li>
+                <a href="https://github.com/notmaster-C" target="_blank">Github</a>
+            </li>
+            <li>
+                <a href="http://if2er.com/" target="_blank">Docsify</a>
+            </li>
+           
+        </ul>
+    </aside>
+
+</body>
+
+</html>
