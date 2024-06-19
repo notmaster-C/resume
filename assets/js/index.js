@@ -50,7 +50,7 @@ layui.use(function () {
                 console.log("当前时间", new Date().getTime())
                 let datet=TimestampToDate(parseInt(data.lastCommit[4]+'000'))
                 data.lastCommit[4] = datet
-
+                data.lastCommit[6]=data.lastCommit.slice(6,data.lastCommit.length)
             }
         }
     })
