@@ -316,13 +316,24 @@
             <hr/>
             <p>善于倾听和交流，具有团队精神，能够有效解决问题；</p>
         </section>
+        
+    <!-- github -->
+    <section class="work info-unit">
+        <h2>
+            <i class="fa fa-pencil" aria-hidden="true"></i>Github</h2>
+        <hr/>
+        <div>{{=d.lastCommit[2]+'@'+d.lastCommit[3]+'在'+d.lastCommit[4]+'提交了'+d.lastCommit[6]}}</div>
+        <img style="align-items: center;" src="https://ghchart.rshah.org/notmaster-C" />
     </section>
+
+    </section>
+</section>
 </article>
 
 
 
 <footer class="footer">
-    <p>© 2024 蔡蔡 .文档最后更新时间为
+    <p>{{='© 2024-'+new Date().getFullYear()+d.userName}} .文档最后更新时间为
         <time>2024年04月11日</time>.</p>
 </footer>
 
