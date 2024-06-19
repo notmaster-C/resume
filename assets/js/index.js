@@ -38,22 +38,22 @@ console.log("感谢您的浏览，期待能够加入贵公司！");
 layui.use(function () {
     var laytpl = layui.laytpl, $ = layui.jquery
     $('#view').html("渲染中...")
-    $.ajax({
-        url: ".git/logs/HEAD",
-        success: function (res) {
-            //去掉最后一行的换行符
-            x = res.substring(0, res.lastIndexOf("\n"))
-            if (x.lastIndexOf("\n") > 0) {
-                data.lastCommit = x.substring(x.lastIndexOf("\n"), x.length).trim().split(" ");
-                console.log("上一次提交信息", data.lastCommit)
-                console.log("上一次提交时间", data.lastCommit[4] + '000')
-                console.log("当前时间", new Date().getTime())
-                let datet=TimestampToDate(parseInt(data.lastCommit[4]+'000'))
-                data.lastCommit[4] = datet
-                data.lastCommit[6]=data.lastCommit.slice(6,data.lastCommit.length)
-            }
-        }
-    })
+    // $.ajax({
+    //     url: ".git/logs/HEAD",
+    //     success: function (res) {
+    //         //去掉最后一行的换行符
+    //         x = res.substring(0, res.lastIndexOf("\n"))
+    //         if (x.lastIndexOf("\n") > 0) {
+    //             data.lastCommit = x.substring(x.lastIndexOf("\n"), x.length).trim().split(" ");
+    //             console.log("上一次提交信息", data.lastCommit)
+    //             console.log("上一次提交时间", data.lastCommit[4] + '000')
+    //             console.log("当前时间", new Date().getTime())
+    //             let datet=TimestampToDate(parseInt(data.lastCommit[4]+'000'))
+    //             data.lastCommit[4] = datet
+    //             data.lastCommit[6]=data.lastCommit.slice(6,data.lastCommit.length)
+    //         }
+    //     }
+    // })
     //引入外部html
     $.get('assets/pages/home.html', function (homePage) {
         //渲染并输出结果
