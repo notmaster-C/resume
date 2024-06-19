@@ -16,12 +16,14 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <title>[简历]蔡盛林-后端开发工程师</title>
+    <title>[个人简历]-感谢浏览</title>
+    <link rel="stylesheet" href="assets/js/layui/css/layui.css">
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/typo.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/index.css">
-    <script>console.log("感谢您的浏览，期待能够加入贵公司！");</script>
+    <script src="assets/js/layui/layui.js"></script>
+    <script src="assets/js/index.js"></script>
 </head>
 
 <body>
@@ -69,8 +71,8 @@
                     <img class="avatar" src="https://foruda.gitee.com/avatar/1698504947249402753/11239959_n-mster_1698504947.png!avatar200" onload="document.getElementsByClassName('avatar')[0].style.display = 'block';document.getElementsByClassName('loading')[0].style.display = 'none';">
                 </section>
 
-                <h1 class="name">蔡盛林</h1>
-                <h4 class="info-job">后端开发工程师 / 成都</h4>
+                <h1 class="name" id="userName">无名</h1>
+                <h4 class="info-job" id="job">后端开发工程师</h4>
 
             </section>
 
@@ -82,7 +84,19 @@
                 <ul>
                     <li>
                         <label>个人信息</label>
-                        <span>蔡盛林 / 男 / 23岁</span>
+                        <span>成都 / 男 / 23岁</span>
+                        <label>个人网站</label>
+                        <span>
+                            <a href="https://notmaster-c.github.io/docsify/" target="_blank">Docsify</a>
+                            <a href="http://notmastr.cn/" target="_blank">Blog</a>
+                            <a href="https://leetcode.cn/u/quiz2ical-7ehmannlb2/" target="_blank">LeetCode</a>
+                            <br>
+                            <a href="https://juejin.cn/user/3415506405305048?share_token=51b58585-2672-44e8-9253-d3f5e88f54ec" target="_blank">掘金</a>
+                            <a href="https://www.cnblogs.com/caisl" target="_blank">博客园</a>
+                            <a href="https://gitee.com/itsay/resume" target="_blank">Gitee</a>
+                            <a href="https://github.com/notmaster-C" target="_blank">Github</a>
+                        
+                        </span>
                     </li>
                 </ul>
             </section>
@@ -99,13 +113,7 @@
                     </li>
                     <li>
                         <label>邮箱</label>
-                        <a href="#" target="_blank">caisl1229@foxmail.com</a>
-                    </li>
-                    <li>
-                        <label>社交平台</label>
-                        <a href="https://gitee.com/n-mster" target="_blank">Gitee</a> 
-                        <a href="https://github.com/notmaster-C" target="_blank">Github</a> 
-                        <a href="https://notmaster-c.github.io/docsify/" target="_blank">Docsify</a>
+                        <a href="#" target="_blank">notmastr@163.com</a>
                     </li>
                 </ul>
             </section>
@@ -152,11 +160,11 @@
                         </li>
                         <li>
                             <label>后端</label>
-                            <span>SpringMVC、JPA、SpringCloud、Mybatis、MySQL、Oracle、Redis</span>
+                            <span>SSM、JPA、MySQL、Oracle、Redis、Golang、SpringCloud</span>
                         </li>
                         <li>
                             <label>其他</label>
-                            <span>Git、Markdown</span>
+                            <span>Git、Markdown、Linux、Python、Ollama</span>
                         </li>
                     </ul>
                 </div>
@@ -175,7 +183,7 @@
                             <span>西华大学 - 软件工程专业（本科）</span>
                             <time>2019.9-2023.7</time>
                         </h3>
-                        <p><a href="https://nmc.xhu.edu.cn/2964/list.htm" target="_blank" >点击网络</a>
+                        <p><a href="https://nmc.xhu.edu.cn/e3/85/c2964a123781/page.htm" target="_blank" >点击网络</a>
                             <mark>负责人</mark>，期间带领团队参与蓝桥杯、创想杯、创新创业大赛、软件测试大赛、ACM算法、CTF杂项比赛等。</p>
                     </li>
                 </ul>
@@ -229,83 +237,111 @@
                     <li>
                         <h3>
                             <span>[项目1]贵州铜仁学院陆艳工作室</span>
-                            <span class="link">
-                                <a href="#" target="_blank">Demo</a>
-                            </span>
                             <time>2021.12-2022.1</time>
                         </h3>
                         <ul class="info-content">
-                            <li>技术栈：SpringMVC+Thymeleaf+Layui+JWT</li>
+                            <li>技术栈：SSM+阿里云OSS+redis+ws.schild</li>
                             <li>
                                 <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-                                [目标]为陆艳老师开发的名师工作室网站，类似于博客网站，用于在校园内网交流
+                                [目标]为陆艳老师开发的名师工作室网站，类似于信息门户网站，用于在校园内网交流
                                 <br/>
                                 <i class="fa fa-users" aria-hidden="true"></i>
-                                [团队]同 2 位同专业同学一起
+                                [团队]3人
                                 <br/>
                                 <i class="fa fa-bars" aria-hidden="true"></i>
                                 [贡献]参与
-                                <mark>“需求沟通-设计-实现”</mark>全流程，主要负责后端开发(框架搭建、断点续传和大文件秒传等)、及后台管理系统开发，最后项目部署工作
+                                <mark>“需求沟通-设计-实现”</mark>全流程，主要负责后端开发(框架搭建、断点续传和大文件秒传、视频压缩等)、及后台管理系统(ruoyi)开发，最后项目部署工作
                                 <br/>
                                 <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-                                [效果]完成验收</li>
+                                [效果]达到甲方要求</li>
                         </ul>
                     </li>
                     <li>
                         <h3>
                             <span>[项目2]小柚子车业汽车服务平台</span>
-                            <span class="link">
-                                <a href="#" target="_blank">Demo</a>
-                            </span>
                             <time>2022.7-2023.3</time>
                         </h3>
                         <ul class="info-content">
-                            <li>技术栈：SpringBoot+Vue+SaToken+微信小程序</li>
+                            <li>技术栈：SpringBoot+Redis+SaToken+mp</li>
                             <li>
                                 <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-                                [目标]提供商家入驻服务，用户可购买洗车修车等服务，线下扫码核销，高价值服务需要拍照上传
+                                [介绍]b2b2c项目,提供商家入驻服务,用户可购买洗车修车等服务，订单线下扫码核销，高价值服务需要拍照上传
                                 <br/>
                                 <i class="fa fa-users" aria-hidden="true"></i>
-                                [团队]后端3个(大二学弟以及一个学长-出差)前端5个(不太熟悉，似乎有几个新人)，产品1个(后来实习出差了)，PM一个
+                                [团队]后端*3,前端*5个,产品*1,PM*1
                                 <br/>
                                 <i class="fa fa-bars" aria-hidden="true"></i>
-                                [贡献]
-                                自定义切面检测自定义注解，记录请求IP，使用ip2region解析归属地， <br>
-                                检测上传注解使用百度内容审核API对用户上传内容进行非法审核，检测注解DistributedLock实现分布式锁<br>
-                                使用mybatis-plus插件实现乐观锁并发控制，防止数据不一致<br>
-                                基于 Redis 实现消息队列注解MessageListener，Stream 提供集群消费，Pub/Sub 提供广播消费，基于 Redis RRateLimiter 实现接口限流，<br>
+                                [贡献]搭建基本框架,使用ip2region解析归属地记录请求IP, <br>
+                                检测上传注解使用百度内容审核API对用户上传内容进行非法审核,检测注解DistributedLock实现分布式锁<br>
+                                使用mybatis-plus插件实现乐观锁并发控制,防止数据不一致<br>
+                                基于 Redis 实现消息队列注解MessageListener,Stream 提供集群消费,Pub/Sub 提供广播消费，基于 Redis RRateLimiter 实现接口限流，<br>
                                 基于 smart-doc生成 API 接口文档 （基于注释生成文档）
                                 <br/>
                                 <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
-                                [效果]由于前端效果甲方不满意并且前端几个同学忙去找工作没时间修改，该项目未能成功上线(ㄒoㄒ)
+                                [效果]完成后端开发任务
                             </li>
                         </ul>
                     </li>
                     <li>
                         <h3>
-                            <span>[项目3]智慧旅游平台</span>
-                            <span class="link">
-                                <a href="#" target="_blank">Demo</a>
-                            </span>
-                            <time>2022.10-2023.1</time>
+                            <span>[项目3]嗨耍成都(文旅项目)</span>
+                            <!-- <span class="link">
+                                <a href="#" >WX</a>
+                            </span> -->
+                            <time>2023.4-2023.8</time>
                         </h3>
                         <ul class="info-content">
-                            <li>技术栈：SpringMVC+Thymeleaf+Layui+SpringSecurity+JPA</li>
+                            <li>技术栈：SpringCloud+Springboot+nacos+Redis+Mybatisplus+RocketMQ</li>
                             <li>
                                 <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-                                [目标]毕设项目，为用户提供旅游路线、景点门票预约、酒店预订、车票预约、旅游攻略功能，后台实现cms系统
-                                <br/>
-                                <i class="fa fa-users" aria-hidden="true"></i>
-                                [团队]单人项目
+                                [介绍]“嗨耍成都”为用户提供一站式的生活服务，从个性化住宿体验、热门旅游景点门票，到别具风情的文创艺术周边和美味特色餐饮，应有尽有
                                 <br/>
                                 <i class="fa fa-bars" aria-hidden="true"></i>
-                                [贡献]使用 <mark>自定义AOP切面检测注解</mark>记录请求IP、归属地、URI、用户信息。<br>
-                                使用 <mark>elasticSearch</mark>实现全文搜索，使用 <mark>Redis</mark>缓存热点数据<br>
-                                通过 <mark>协同过滤推荐算法</mark>itemCF根据景点或酒店推荐酒店、车票或景点，UserCF根据同样地区(ip)的userid set(不重复)计算皮尔森系数推荐景点。
+                                [贡献]
+                                使用RocketMQ实现
+                                <a href="http://www.notmastr.cn/archives/1718347156775" target="_blank">
+                                    异步下单
+                                </a> 
+                                功能,缩短秒杀业务流程,单线程业务实测由300ms缩短到60ms左右,
+                                <a href="http://www.notmastr.cn/archives/1718346675916" target="_blank">
+                                    利用延迟消息实现订单超时自动取消
+                                </a> 
+                                <br/>
+                                通过 <mark>AOP注解</mark>日志记录、请求记录、登录用户获取。<br>
+                                使用 <mark>协同过滤推荐算法</mark>,
+                                <a href="http://www.notmastr.cn/archives/1718350518724" target="_blank">
+                                    根据UserCF实现精品推荐
+                                </a> 
+                                。
                                 <br/>
                                 <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-                                [效果]达到毕业要求，收入（学士学位证）</li>
+                                [效果]完成开发要求，上线验证无异常。</li>
                         </ul>
+
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目4]数据中台及其子项目</span>
+                            <time>2023.4-2023.8</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：Go+Gin+Gorm+Casbin+protobuf</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [介绍]围绕数据中台展开的一系列子系统,包括可视化、督导、填报、图书馆报告等。
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [贡献]
+                                - 可视化数据计算、填报学时拆分接口、督导课程预约等接口、图书馆年度报告
+                                - 优化定时任务,增加sql模板定存
+                                - SQL调优->查询的下钻接口,通过优化sql语句、增加索引、细分表,将原本超10s的sql,优化为100ms
+                                - 优化督导统计接口,需求解析json格式的表单数据,原接口超时,通过多线程优化.
+                                - 线上错误排查,线上服务或数据异常,前后端运维都有参与,因此可快速定位问题所在,并解决。
+                                <br/>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [效果]项目验收、有后续开发任务。</li>
+                        </ul>
+                        
                     </li>
                 </ul>
             </section>
@@ -340,7 +376,9 @@
             <li>
                 <a href="https://notmaster-c.github.io/docsify/" target="_blank">Docsify</a>
             </li>
-           
+            <li>
+                <a href="http://notmastr.cn/" target="_blank">Blog</a>
+            </li>
         </ul>
     </aside>
 
